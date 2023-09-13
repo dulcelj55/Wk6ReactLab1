@@ -1,15 +1,11 @@
 import { useState } from "react"
-
+import { color } from "../../utility/color";
 
 
 const ColorChanger = () => {
   const [buttonColor,setBackgroundColor] = useState("red");
-
-  const color = ()=>{
-    const setBGC = Math.floor(Math.random()*16777215).toString(16);
-    return '#' + setBGC
-  }
-  
+ 
+ 
 
   return (
     <div>
