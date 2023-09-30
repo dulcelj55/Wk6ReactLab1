@@ -8,7 +8,7 @@ const TextInput = () => {
 
     <>
     < input value ={inputValue} placeholder="Type here" onChange ={(e) =>setInputValue(e.target.value)}/>
-    <button onCLick= {() => setInputValue()}></button>
+    {/* <button onCLick= {() => setInputValue()}></button> */}
     
     </>
     

@@ -15,11 +15,17 @@ function App() {
   return (
     <>
       <h1>
+        Promt 1:
         <HelloWorld/>
+        Promt 2:
         <ColorChanger/>
+        Promt 3:
         <ContactForm/>
-        <ItemList/>
+         Promt 4:
         <TextInput/>
+        Promt 5:
+        <ItemList/>
+        
 
       </h1>
     </>
