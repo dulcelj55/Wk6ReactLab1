@@ -5,10 +5,17 @@ const ContactForm = () => {
   const [name, setName] = useState ("")
   const [email, setEmail] = useState ("")
   const [message, setMessage] = useState ("")
-  const [formValues, setFormValues] = useState({});
+  const [newName, setNewName] = useState ("")
+  const [newEmail, setNewEmail] = useState ("")
+  const [newMessage, setNewMessage] = useState ("")
 
-// const handleChange = () =>{
-//   setFormValues({ ...formValues,  });
+
+const handleClick = () =>{
+  setNewEmail(email)
+  setNewMessage(message)
+  setNewName(name)
+ 
+   };
 
 
   return (
@@ -17,8 +24,8 @@ const ContactForm = () => {
     <input value ={name} placeholder="Name" onChange ={(e) =>setName(e.target.value)}/>
     <input value ={email}  placeholder="Email" onChange ={(e) => setEmail(e.target.value)}/>
     <input value ={message}  placeholder="Message" onChange ={(e) => setMessage(e.target.value)}/>
-    <button type="submit">Submit</button>
-    <p>{name}'s email is {email}. They would like to say{message}</p>
+    <button type="submit" onClick={handleClick}>Submit</button>
+    <p>Your name is {newName}, with email {newEmail}, and your message is {newMessage}</p>
     </>
   )
 }
